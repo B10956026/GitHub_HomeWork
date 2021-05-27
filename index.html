@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B10956026</title>
+    <style>
+        caption {
+            color: blue;
+            font-size: 36px;
+            text-align: center;
+            height: 78px;
+        }
+        
+        table {
+            border: 1px black dashed;
+            text-align: center;
+            margin: 0 auto;
+            width: 500px;
+        }
+        
+        #i {
+            border: 1px purple dotted;
+            color: purple;
+            width: 60px;
+            height: 30px;
+        }
+        
+        #j {
+            border: 1px purple dotted;
+            color: purple;
+            width: 5px;
+            height: 50px;
+            font-size: 18px;
+        }
+        
+        #jj {
+            width: 5px;
+            height: 30px;
+        }
+        
+        #aa {
+            border: 1px green dotted;
+            color: green;
+            width: 40px;
+            height: 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<script>
+    document.write("<table>");
+    document.write("<caption colspan=6>MIS快餐點餐價格表</caption>");
+    document.write("<tr>");
+
+    document.write("<td id=jj>&nbsp</td>");
+
+    for (var j = 1, x = 5, y = 8; j <= 5, x >= 5, y <= 20; j++, x--, y += 3) {
+        document.write("<td id=j>" + x + "號餐<br>" + y + "元</td>");
+    }
+
+    document.write("</tr>");
+
+    for (var i = 3; i <= 7; i++) {
+        document.write("<tr>");
+
+        document.write("<td id=j>" + i + "</td>");
+        for (var j = 8; j <= 20; j = j + 3) {
+            document.write("<td id=aa>" + i + "*" + j + "＝" + i * j + "</td>");
+        }
+    }
+    document.write("</tr>");
+    document.write('</table>');
+</script>
+
+<body>
+
+</body>
+
+</html>
